@@ -1,4 +1,11 @@
+require("./xyz.js"); // one module into another
 
+// cjs
+const { calculateSum, calculateMultiply } = require("./calculate/index.js");
+
+const data  = require("./data.json");
+
+console.log(data);
 
 
 var name = "Namaste NodeJs";
@@ -7,13 +14,10 @@ var a = 10;
 
 var b = 20;
 
-//  console.log(name);
-//  console.log(a+b);
+// var x = 100;
 
-//  console.log(global);
-// console.log(this); //Empty object
-// console.log(globalThis);
-// console.log(globalThis === global); //true
+calculateSum(a, b);
 
+calculateMultiply(a, b);
 
-
+console.log(x);
